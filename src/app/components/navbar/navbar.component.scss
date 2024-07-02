@@ -1,0 +1,27 @@
+.navbar {
+    height: 69px;
+    width: 100%;
+    background-color: var(--primary-yellow);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 112px;
+}
+
+.nav-items {
+    display: flex;
+    gap: 32px;
+}
+
+.manati-label {
+    color: var(--text-brown);
+    font-size: 38px;
+    line-height: 130%;
+}
+
+.nav-items > .nav-item {
+    color: var(--grey);
+    font-weight: 600;
+    font-family: montserrat;
+    font-size: 18px;
+}

@@ -1,0 +1,29 @@
+.home {
+    height: 100vh;
+}
+
+.image-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 600px;
+    background-image: url('../../../../assets/manati-home-img.jpg');
+    background: linear-gradient(to right, #141000,  rgba(12, 10, 1, 0)), url('../../../../assets/manati-home-img.jpg');
+    background-size: cover;
+    background-position: center 48%;
+    background-repeat: no-repeat;
+}
+
+.background-image {
+    height: 600px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.background-image img {
+    height: 100%;
+}

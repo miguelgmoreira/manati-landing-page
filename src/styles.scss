@@ -1,1 +1,31 @@
-/* You can add global styles to this file, and also import other style files */
+:root {
+    --primary-yellow: #FFC400;
+    --secondary-yellow: #FFD600;
+    --terciary-yellow: #DCA900;
+    --section-title: #FAEA00;
+    --beige-bg: #FFF6D4;
+    --beige-icon: #FFEBD4;
+    --brown-bg: #352900;
+    --text-brown: #352900;
+    --grey: #1E1E1E;
+    --primary-orange: #FF5C00;
+    --black: #000000;
+    --white: #fff;
+}
+
+@font-face {
+    font-family: adumu;
+    src: url(./assets/Adumu.ttf);
+}
+
+@font-face {
+    font-family: montserrat;
+    src: url(./assets/Montserrat-Regular.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: adumu;
+}
