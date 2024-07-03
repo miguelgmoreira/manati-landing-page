@@ -1,4 +1,7 @@
-<button class="button {{ type() }}" [ngClass]="size()">
-        {{ buttonLabel() | uppercase}}
-      <img src="../../../assets/WhatsApp.png" alt="" *ngIf="hasIcon()">
+<button class="button {{ type() }}" [ngClass]="size()" [ngStyle]="{fontFamily: fontFamily(), fontWeight: fontWeight()}">
+        {{ buttonLabel()}}
+        <ng-container *ngIf="icon()">
+          <img src="../../../assets/WhatsApp.png" alt="" *ngIf="icon() == 'whatsapp'">
+          <i [class]="icon()" *ngIf="icon() != 'whatsapp'"></i>
+        </ng-container>
 </button>

@@ -9,8 +9,10 @@ import { Component, input } from '@angular/core';
   styleUrl: './button.component.scss'
 })
 export class ButtonComponent {
-  buttonLabel = input<string>('Entrar em contato');
+  buttonLabel = input<string>('ENTRAR EM CONTATO');
   type = input<'primary' | 'secondary' | 'outlined'| string>('primary');
-  hasIcon = input<boolean>(false);
+  icon = input<string | null>(null);
   size =  input<'large' | 'medium' | 'small' | string>('small')
+  fontFamily = input<string>('adumu');
+  fontWeight = input<string>('normal')
 }
