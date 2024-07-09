@@ -9,6 +9,7 @@
 .primary {
     background-color: var(--primary-orange);
     color: var(--white);
+    transition: ease .3s;
 }
 
 .secondary {
@@ -19,8 +20,17 @@
 .secondary-yellow {
     background-color: var(--secondary-yellow);
     color: var(--black);
+    transition: ease .2s;
 }
 
+.secondary-yellow:hover {
+    background-color: var(--black);
+    color: var(--primary-yellow);
+}
+
+.primary:hover {
+    transform: scale(1.05);
+}
 
 .outlined {
 
@@ -46,18 +56,20 @@ img {
     object-fit: cover;
 }
 
-.small img {
+.small img, .small i {
     width: 22px;
     height: 22px;
     padding-bottom: 2px;
+    margin-left: .6rem;
 }
 
-.medium img {
+.medium img, .medium i {
     width: 22px;
     height: 22px;
+    margin-left: .6rem;
 }
 
-.large img {
+.large img, .large i {
     width: 26px;
     height: 26px;
     padding-bottom: 4px;

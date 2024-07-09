@@ -1,4 +1,100 @@
 .about-area {
-    min-height: 100vh;
-    background-color: var(--beige-bg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: var(--beige-bg);
+}
+
+.about-container {
+  height: 80%;
+  width: 80%;
+}
+
+.upper-container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 2.6rem;
+  height: 400px;
+  margin-bottom: 64px;
+}
+
+.downer-container {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.manati-image {
+  width: 50%;
+  height: 100%;
+  box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.25);
+  border-radius: 8px;
+}
+
+.manati-image img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+  object-position: center 80%;
+}
+
+.manati-description {
+  width: 486px;
+}
+
+.image-description-label {
+  color: #151101;
+  font-family: montserrat;
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+.description-title {
+  margin-bottom: 3rem;
+}
+
+.description-text > div {
+  font-size: 16px;
+  font-family: montserrat;
+}
+
+.description-text > div:nth-child(1) {
+  margin-bottom: 1.6rem;
+}
+
+.description-text > div > span {
+  font-family: montserrat;
+  font-weight: bold;
+}
+
+.upper-div, .downer-div {
+    display: flex;
+    gap: 32px;
+}
+
+.opinion-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 16px 18px;
+    border: 2px solid var(--black);
+}
+
+.opinion-text {
+    font-family: montserrat;
+    font-weight: 600;
+}
+
+.stars {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.stars i {
+    font-size: 16px;
+    color: var(--black);
 }

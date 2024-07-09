@@ -1,4 +1,16 @@
-<app-navbar></app-navbar>
-<app-home></app-home>
-<app-programacao></app-programacao>
-<app-about></app-about>
+<app-navbar (navigateToSection)="scrollToSection($event)"></app-navbar>
+<div id="home">
+  <app-home></app-home>
+</div>
+<div id="programacao">
+  <app-programacao></app-programacao>
+</div>
+<div id="sobre">
+  <app-about></app-about>
+</div>
+<div id="espaco">
+  <app-espaco></app-espaco>
+</div>
+<div id="cardapio">
+  <app-cardapio></app-cardapio>
+</div>

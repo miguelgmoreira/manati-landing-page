@@ -44,15 +44,19 @@
 
 
 .programacao-description-tipos {
+    width: 60%;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    row-gap: 16px;
+    gap: 1rem 3rem;
+    
+
     margin-bottom: 48px;
 }
 
 .programacao-description-tipos > div {
     display: flex;
     align-items: center;
+    gap: 10px;
 }
 
 .programacao-description-tipos > div > i {

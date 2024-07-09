@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, output } from '@angular/core';
 import { ButtonComponent } from '../../shared/button/button.component';
 
 @Component({
@@ -9,5 +9,9 @@ import { ButtonComponent } from '../../shared/button/button.component';
   styleUrl: './navbar.component.scss'
 })
 export class NavbarComponent {
+  navigateToSection = output<string>()
 
+  navigateTo(section: string) {
+    this.navigateToSection.emit(section)
+  }
 }

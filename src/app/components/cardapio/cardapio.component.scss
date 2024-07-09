@@ -1,0 +1,123 @@
+.cardapio-area {
+  height: 100vh;
+  background-color: var(--beige-bg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cardapio-container {
+  height: 80%;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+}
+
+.cardapio-title,
+.cardapio-label {
+  text-align: center;
+}
+
+.cardapio-title {
+  padding-bottom: 0.4rem;
+}
+
+.cardapio-label {
+  font-family: montserrat;
+  font-size: 24px;
+  padding-bottom: 2.4rem;
+}
+
+.cardapio-items {
+  display: grid;
+  grid-template-columns: calc(40% - 16px) calc(60% - 16px);
+  gap: 32px;
+  flex-grow: 1;
+}
+
+.cardapio-item,
+.cardapio-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.cardapio-item {
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.cardapio-item img {
+  position: absolute;
+}
+
+.cardapio-item::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to top, rgba(20, 16, 0, 0.6) 0%, rgba(20, 16, 0, 0) 100%);
+  z-index: 1;
+  transition: background .4s ease;
+}
+
+.cardapio-item:hover::after {
+  background: linear-gradient(to top, rgba(20, 16, 0, 0.4) 0%, rgba(20, 16, 0, 0.2) 50%, rgba(20, 16, 0, 0) 100%);
+}
+
+.right {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  gap: 32px;
+}
+
+.right .top {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 32px;
+}
+
+.left > .cardapio-item > img {
+  object-fit: cover;
+  object-position: center 40%;
+}
+
+.top > div:nth-child(1) > img {
+  object-fit: cover;
+  object-position: center 60%;
+}
+
+.top > div:nth-child(2) > img {
+  object-fit: cover;
+  object-position: center 55%;
+}
+
+.bottom > div > img {
+  object-fit: cover;
+  object-position: center 45%;
+}
+
+.label {
+  position: absolute;
+  bottom: 0;
+  padding: 1rem;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  gap: .6rem;
+  color: var(--primary-yellow);
+  z-index: 2;
+  transition: transform 0.3s ease;
+}
+
+.cardapio-item:hover .label {
+  transform: translateY( -10px);
+}
+

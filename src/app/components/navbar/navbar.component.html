@@ -1,11 +1,10 @@
 <div class="navbar">
     <div class="manati-label">Manatí</div>
     <div class="nav-items">
-        <div class="nav-item">Home</div>
-        <div class="nav-item">Sobre nós</div>
-        <div class="nav-item">Cardápio</div>
-        <div class="nav-item">Reservas</div>
-        <div class="nav-item">Eventos</div>
+        <div class="nav-item" (click)="navigateTo('programacao')">Programação</div>
+        <div class="nav-item" (click)="navigateTo('sobre')">Sobre nós</div>
+        <div class="nav-item" (click)="navigateTo('espaco')">Nosso espaço</div>
+        <div class="nav-item" (click)="navigateTo('cardapio')">Cardapio</div>
     </div>
     <app-button type="secondary"></app-button>
 </div>
