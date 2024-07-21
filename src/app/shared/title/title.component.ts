@@ -11,4 +11,6 @@ import { Component, input } from '@angular/core';
 export class TitleComponent {
   title = input<string>();
   cor = input<'preto' | 'amarelo'>();
+  font = input<'montserrat' | 'adumu' | 'satoshi'>('adumu');
+  fontWeight = input<'normal' | 'bold' | string>()
 }

@@ -1,10 +1,20 @@
 <div class="navbar">
-    <div class="manati-label">Manatí</div>
-    <div class="nav-items">
-        <div class="nav-item" (click)="navigateTo('programacao')">Programação</div>
-        <div class="nav-item" (click)="navigateTo('sobre')">Sobre nós</div>
-        <div class="nav-item" (click)="navigateTo('espaco')">Nosso espaço</div>
-        <div class="nav-item" (click)="navigateTo('cardapio')">Cardapio</div>
-    </div>
+  <div class="manati-label">Manatí</div>
+  <div class="nav-items" [ngClass]="{ expanded: menuExpanded }">
+    <div class="nav-item" (click)="navigateTo('programacao')">Programação</div>
+    <div class="nav-item" (click)="navigateTo('sobre')">Sobre nós</div>
+    <div class="nav-item" (click)="navigateTo('espaco')">Nosso espaço</div>
+    <div class="nav-item" (click)="navigateTo('cardapio')">Cardapio</div>
+  </div>
+  <div class="button">
     <app-button type="secondary"></app-button>
+  </div>
+  <div class="bars" (click)="toggleExpand()">
+    <ng-container *ngIf="!menuExpanded">
+      <i class="fa-solid fa-bars"></i>
+    </ng-container>
+    <ng-container *ngIf="menuExpanded">
+      <i class="fa-solid fa-xmark"></i>
+    </ng-container>
+  </div>
 </div>

@@ -1,7 +1,7 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
-import { ButtonComponent } from '../button/button.component';
-import { TitleComponent } from '../title/title.component';
+import { ButtonComponent } from '../../shared/button/button.component';
+import { TitleComponent } from '../../shared/title/title.component';
 
 @Component({
   selector: 'app-home',
@@ -11,5 +11,4 @@ import { TitleComponent } from '../title/title.component';
   styleUrl: './home.component.scss'
 })
 export class HomeComponent {
-
 }

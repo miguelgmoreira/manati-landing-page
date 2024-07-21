@@ -3,10 +3,13 @@ import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { AboutComponent } from './components/about/about.component';
 import { CardapioComponent } from './components/cardapio/cardapio.component';
+import { DuvidasComponent } from './components/duvidas/duvidas.component';
 import { EspacoComponent } from './components/espaco/espaco.component';
+import { FaqComponent } from './components/faq/faq.component';
+import { FooterComponent } from './components/footer/footer.component';
+import { HomeComponent } from './components/home/home.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { ProgramacaoComponent } from './components/programacao/programacao.component';
-import { HomeComponent } from './shared/home/home.component';
 
 @Component({
   selector: 'app-root',
@@ -20,6 +23,9 @@ import { HomeComponent } from './shared/home/home.component';
     AboutComponent,
     EspacoComponent,
     CardapioComponent,
+    DuvidasComponent,
+    FaqComponent,
+    FooterComponent
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss',

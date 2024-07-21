@@ -1,0 +1,60 @@
+.duvidas-area {
+    width: 100%;
+    height: 60vh;
+    background-image: url(../../../assets/cozinheiro.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.duvidas-container {
+    background-color: var(--dark-brown);
+    padding: 36px 64px;
+    width: 40%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 8px;
+}
+
+.duvidas-label {
+    font-size: 48px;
+    color: var(--primary-yellow);
+    margin-bottom: 32px;
+}
+
+.duvidas-description {
+    color: var(--primary-yellow);
+    font-family: montserrat;
+    letter-spacing: 1px;
+    line-height: 150%;
+    font-size: 18px;
+    margin-bottom: 32px;
+}
+
+.duvidas-description span {
+    font-weight: 900;
+    font-family: montserrat;
+}
+
+@media (max-width: 1280px) {
+    .duvidas-container {
+        width: 60%;
+    }
+}
+
+@media (max-width: 835px) {
+    .duvidas-container {
+        width: 90%;
+        padding: 20px;
+    }
+
+    .duvidas-area {
+        height: auto;
+        padding: 80px 0;
+    }
+}
+

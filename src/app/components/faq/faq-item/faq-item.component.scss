@@ -1,0 +1,44 @@
+.faq-item-container {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 66px;
+    cursor: pointer;
+}
+
+.showed-area {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.action-btn {
+    font-size: 40px;
+    margin-right: 4rem;
+}
+
+.faq-pergunta {
+    margin-right: 2rem;
+    font-family: satoshi;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.answer {
+    font-family: satoshi;
+    margin-top: 34px;
+    font-size: 18px;
+}
+
+@media (max-width: 1180) {
+    
+}
+
+@media (max-width: 835px) {
+    .faq-pergunta {
+        font-size: 26px;
+    }
+
+    .action-btn {
+        margin: 0;
+    }
+}

@@ -1,0 +1,18 @@
+<div class="faq-area">
+  <div class="faq-container">
+    <div class="faq-title">
+      <app-title title="FAQ" font="satoshi" fontWeight="bold"></app-title>
+    </div>
+    <div class="divider">
+      <app-divider></app-divider>
+    </div>
+    <div class="faq-list">
+      <ng-container *ngFor="let question of faqQuestions">
+          <app-faq-item [question]="question"></app-faq-item>
+      </ng-container>
+    </div>
+    <div class="button">
+        <app-button icon="whatsapp" size="large"></app-button>
+    </div>
+  </div>
+</div>

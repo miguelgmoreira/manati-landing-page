@@ -28,12 +28,20 @@
     color: var(--primary-yellow);
 }
 
-.primary:hover {
+.primary:hover, .secondary:hover {
     transform: scale(1.05);
 }
 
 .outlined {
+    background-color: var(--dark-brown);
+    color: var(--primary-yellow); 
+    border: 2px solid var(--primary-yellow);
+}
 
+.outlined:hover {
+    background-color: var(--primary-yellow);
+    color: var(--dark-brown); 
+    border: 2px solid var(--dark-brown);
 }
 
 

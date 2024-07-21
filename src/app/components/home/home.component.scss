@@ -1,0 +1,221 @@
+.home {
+  min-height: calc(100vh - 69px);
+}
+
+.image-container {
+  position: relative;
+  min-height: calc(62vh - 69px);
+  background: linear-gradient(to right, #141000, rgba(12, 10, 1, 0)),
+    url("../../../assets/manati-home-img.jpg");
+  background-size: cover;
+  background-position: center 48%;
+  background-repeat: no-repeat;
+}
+
+.background-image {
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.background-image img {
+  height: 100%;
+}
+
+.home-description {
+  position: absolute;
+  bottom: 30%;
+  left: 6%;
+}
+
+.image-description-label {
+  font-family: montserrat;
+  font-size: 28px;
+  color: var(--terciary-yellow);
+  margin-bottom: 0.5rem;
+}
+
+.image-description {
+  font-size: 64px;
+  color: var(--white);
+  margin-bottom: 48px;
+}
+
+.image-description span {
+  color: var(--primary-yellow);
+}
+
+.reserva-area {
+  background-color: var(--beige-bg);
+  height: 38vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.reserva-title,
+.reserva-description {
+  color: var(--black);
+  text-align: center;
+}
+
+.reserva-title {
+  font-size: 48px;
+  margin-bottom: 0.5rem;
+}
+
+.reserva-description {
+  font-size: 18px;
+  font-family: montserrat;
+  margin-bottom: 48px;
+}
+
+.reserva-btns {
+  display: flex;
+  gap: 48px;
+}
+
+.overlap-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.overlap-card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 38px;
+  background-color: #fff8f0;
+  padding: 24px 38px;
+  border-radius: 8px;
+  position: absolute;
+  top: -15%;
+}
+
+.card-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.card-item-label {
+  font-size: 18px;
+  color: var(--brown-bg);
+}
+
+.card-item i {
+  font-size: 38px;
+  padding: 10px;
+  border-radius: 50%;
+  background-color: var(--beige-icon);
+  color: #703c0b;
+}
+
+// @media (max-height: 944px) {
+//     .image-container {
+//         height: 440px;
+//     }
+
+//     .reserva-area {
+//         height: calc(100vh - 509px);
+//     }
+// }
+
+@media (max-width: 1280px) {
+  .home-description {
+    bottom: 24%;
+  }
+
+  .overlap-card {
+    gap: 24px;
+  }
+
+  .card-item i {
+    font-size: 32px;
+  }
+
+  .card-item-label {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 1118px) {
+    .overlap-container {
+      margin-bottom: 4rem;
+    }
+
+    .overlap-card {
+        padding: 12px 28px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        top: -20%;
+        gap: 18px;
+      }
+}
+
+@media (max-width: 835px) {
+  .overlap-container {
+    margin-bottom: 0;
+  }
+
+  .image-container {
+    display: flex;
+    justify-content: center;
+  }
+
+  .home-description {
+    bottom: 22%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .image-description {
+    font-size: 34px;
+  }
+
+  .image-description-label {
+    font-size: 16px;
+  }
+
+  .image-description {
+    margin-bottom: 156px;
+  }
+
+  .home-description {
+    position: absolute;
+    bottom: 20%;
+    left: auto;
+  }
+
+  .reserva-area {
+    padding-top: 50px;
+    height: auto;
+    padding-bottom: 80px;
+  }
+
+  .overlap-card {
+    grid-template-columns: 1fr;
+    position: relative;
+    padding: 12px 18px;
+    gap: 24px;
+    top: -25%;
+  }
+
+  .reserva-btns {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .overlap-container {
+    height: 292px;
+  }
+}

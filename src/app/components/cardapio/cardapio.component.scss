@@ -121,3 +121,30 @@
   transform: translateY( -10px);
 }
 
+@media (max-width: 835px) {
+  .cardapio-area {
+    height: auto;
+    padding: 60px 0;
+  }
+
+  .cardapio-label {
+    font-size: 20px;
+  }
+
+    .cardapio-items {
+      grid-template-columns: 1fr;
+    }
+
+    .right {
+      grid-template-rows: 1fr;
+    }
+
+    .right .top {
+      grid-template-columns: 1fr;
+    }
+
+    .cardapio-item {
+      height: 200px;
+    }
+}
+

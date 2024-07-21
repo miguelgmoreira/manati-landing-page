@@ -7,6 +7,7 @@
     --beige-icon: #FFEBD4;
     --brown-bg: #352900;
     --light-brown: #703c0b;
+    --dark-brown: #191505;
     --text-brown: #352900;
     --grey: #1E1E1E;
     --primary-orange: #FF5C00;
@@ -22,6 +23,11 @@
 @font-face {
     font-family: montserrat;
     src: url(./assets/Montserrat-Regular.ttf);
+}
+
+@font-face {
+    font-family: satoshi;
+    src: url(./assets/Satoshi-Variable.ttf);
 }
 
 * {

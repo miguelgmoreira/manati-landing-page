@@ -1,1 +1,16 @@
-<p>faq-item works!</p>
+<div class="faq-item-container" (click)="toggleExpand()">
+    <div class="showed-area">
+        <div class="faq-pergunta">{{question()?.question}} ?</div>
+        <div class="action-btn">
+            <i class="fa-solid fa-plus" *ngIf="!expanded"></i>
+            <i class="fa-solid fa-xmark" *ngIf="expanded"></i>
+        </div>
+    </div>
+    <div class="hidden-area" *ngIf="expanded">
+        <div class="answer">
+            {{question()?.answer}}
+        </div>
+    </div>
+</div>
+<app-divider></app-divider>
+

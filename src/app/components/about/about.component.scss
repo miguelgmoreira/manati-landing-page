@@ -2,28 +2,23 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  min-height: 100vh;
   background-color: var(--beige-bg);
+  padding: 3rem 0;
 }
 
 .about-container {
-  height: 80%;
   width: 80%;
 }
 
 .upper-container {
   display: flex;
   align-items: center;
-  justify-content: flex-start;
+  justify-content: center;
   gap: 2.6rem;
-  height: 400px;
-  margin-bottom: 64px;
 }
 
 .downer-container {
-  display: flex;
-  flex-direction: column;
-  gap: 32px;
+  width: 100%;
 }
 
 .manati-image {
@@ -31,14 +26,6 @@
   height: 100%;
   box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.25);
   border-radius: 8px;
-}
-
-.manati-image img {
-  height: 100%;
-  width: 100%;
-  object-fit: cover;
-  border-radius: 8px;
-  object-position: center 80%;
 }
 
 .manati-description {
@@ -70,7 +57,7 @@
   font-weight: bold;
 }
 
-.upper-div, .downer-div {
+.upper-div {
     display: flex;
     gap: 32px;
 }
@@ -97,4 +84,26 @@
 .stars i {
     font-size: 16px;
     color: var(--black);
+}
+
+@media (max-width: 1018px) {
+    .upper-container {
+      flex-direction: column-reverse;
+    }
+
+    .about-area {
+      height: fit-content;
+    }
+
+    .about-container {
+      width: 90%;
+    }
+
+    .manati-image {
+      width: 100%;
+    }
+
+    .manati-description {
+      width: 100%;
+    }
 }
