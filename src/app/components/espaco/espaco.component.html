@@ -7,17 +7,8 @@
       <app-title title="Conheça Nosso Espaço"></app-title>
     </div>
     <div class="espaco-images">
-      <div class="espaco-image">
-        <img src="../../../assets/manati-espaco.jpg" alt="">
-      </div>
-      <div class="espaco-image">
-        <img src="../../../assets/manati-espaco.jpg" alt="">
-      </div>
-      <div class="espaco-image">
-        <img src="../../../assets/manati-espaco.jpg" alt="">
-      </div>
-      <div class="espaco-image">
-        <img src="../../../assets/manati-espaco.jpg" alt="">
+      <div class="espaco-image" *ngFor="let image of images">
+        <img [src]="image.imageSrc" [alt]="image.imageAlt">
       </div>
     </div>
   </div>

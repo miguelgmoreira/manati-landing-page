@@ -11,4 +11,14 @@ import { TitleComponent } from '../../shared/title/title.component';
   styleUrl: './home.component.scss'
 })
 export class HomeComponent {
+
+  buttonSize: string = ''
+
+  ngOnInit(): void {
+    if(window.innerWidth < 768) {
+      this.buttonSize = 'medium';
+    } else {
+      this.buttonSize = 'large';
+    }
+  }
 }

@@ -13,32 +13,34 @@ export class AboutComponent {
 
   images = [
     {
-      imageSrc: '../../../assets/bar-manati.jpg',
-      imageAlt: 'Bar'
+      imageSrc: '../../../assets/manati-amante.jpg',
+      imageAlt: 'Amante'
     },
     {
-      imageSrc: '../../../assets/buffet-manati.jpg',
+      imageSrc: '../../../assets/manati-coxinha.jpg',
+      imageAlt: 'Coxinha'
+    },
+    {
+      imageSrc: '../../../assets/manati-picadinho.jpg',
+      imageAlt: 'Picadinho'
+    },
+    {
+      imageSrc: '../../../assets/manati-isca.jpg',
+      imageAlt: 'Isca 1'
+    },
+    {
+      imageSrc: '../../../assets/Manati-drink.jpg',
       imageAlt: 'Buffet'
     },
     {
-      imageSrc: '../../../assets/banheiro-manati.jpg',
-      imageAlt: 'Banheiro'
+      imageSrc: '../../../assets/manati-tilapia.jpg',
+      imageAlt: 'Tilapia'
     },
     {
-      imageSrc: '../../../assets/banheiro-manati-2.jpg',
-      imageAlt: 'Banheiro 2'
-    },
-    {
-      imageSrc: '../../../assets/bar-area-lateral-manati.jpg',
-      imageAlt: 'Bar'
-    },
-    {
-      imageSrc: '../../../assets/brinquedoteca-manati.jpg',
-      imageAlt: 'Brinquedoteca'
-    },
-    {
-      imageSrc: '../../../assets/interior-manati.jpg',
-      imageAlt: 'Interior'
+      imageSrc: '../../../assets/manati-sobremesa-morango.jpg',
+      imageAlt: 'Sobremesa manati morango'
     },
   ]
+
+
 }

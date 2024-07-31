@@ -8,11 +8,15 @@
     </div>
     <div class="faq-list">
       <ng-container *ngFor="let question of faqQuestions">
-          <app-faq-item [question]="question"></app-faq-item>
+        <app-faq-item [question]="question"></app-faq-item>
       </ng-container>
     </div>
     <div class="button">
-        <app-button icon="whatsapp" size="large"></app-button>
+      <app-button
+        icon="whatsapp"
+        [size]="buttonSize"
+        whatsappMessage="Olá, vim pelo site. Quero tirar uma dúvida!"
+      ></app-button>
     </div>
   </div>
 </div>

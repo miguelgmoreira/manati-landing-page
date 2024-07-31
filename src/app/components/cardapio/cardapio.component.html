@@ -4,28 +4,28 @@
       <app-title title="Nosso Cardápio"></app-title>
     </div>
     <div class="cardapio-label">
-      Conheça nossos pratos mais famosos e recomendados pelos nossos clientes!
+      Conheça nossos pratos, drinks e sobremesas mais famosos e recomendados pelos nossos clientes!
     </div>
     <div class="cardapio-items">
       <div class="left">
-        <div class="cardapio-item">
-          <img src="../../../assets/manati-happy-hour.jpg" alt="Imagem 1" />
+        <div class="cardapio-item" (click)="irParaCardapio()">
+          <img src="../../../assets/Manati-salmao.jpg" alt="Imagem 4" />
           <div class="label">
-            <span>Happy Hour</span>
+            <span>Pratos Principais</span>
             <i class="fa-solid fa-arrow-right-long"></i>
           </div>
         </div>
       </div>
       <div class="right">
         <div class="top">
-          <div class="cardapio-item">
+          <div class="cardapio-item" (click)="irParaCardapio()">
             <img src="../../../assets/Manati-drink-vermelho.jpg" alt="Imagem 2" />
             <div class="label">
               <span>Drinks e Bebidas</span>
               <i class="fa-solid fa-arrow-right-long"></i>
             </div>
           </div>
-          <div class="cardapio-item">
+          <div class="cardapio-item" (click)="irParaCardapio()">
             <img src="../../../assets/Manati-sobremesa.jpg" alt="Imagem 3" />
             <div class="label">
               <span>Sobremesas</span>
@@ -34,10 +34,10 @@
           </div>
         </div>
         <div class="bottom">
-          <div class="cardapio-item">
-            <img src="../../../assets/Manati-salmao.jpg" alt="Imagem 4" />
+          <div class="cardapio-item" (click)="irParaCardapio()">
+            <img src="../../../assets/manati-happy-hour.jpg" alt="Imagem 1" />
             <div class="label">
-              <span>Pratos Principais</span>
+              <span>Happy Hour</span>
               <i class="fa-solid fa-arrow-right-long"></i>
             </div>
           </div>

@@ -26,7 +26,7 @@
     margin-bottom: 32px;
 }
 
-.duvidas-description {
+.duvidas-description, .duvidas-description span {
     color: var(--primary-yellow);
     font-family: montserrat;
     letter-spacing: 1px;
@@ -36,8 +36,7 @@
 }
 
 .duvidas-description span {
-    font-weight: 900;
-    font-family: montserrat;
+    display: inline-block;
 }
 
 @media (max-width: 1280px) {
@@ -50,6 +49,10 @@
     .duvidas-container {
         width: 90%;
         padding: 20px;
+    }
+
+    .duvidas-description {
+        font-size: 16px;
     }
 
     .duvidas-area {

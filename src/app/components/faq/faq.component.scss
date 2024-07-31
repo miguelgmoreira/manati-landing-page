@@ -19,3 +19,9 @@
     align-items: center;
     justify-content: center;
 }
+
+@media (max-width: 835px) {
+    .faq-area {
+        padding: 2.5rem 0;
+    }
+}

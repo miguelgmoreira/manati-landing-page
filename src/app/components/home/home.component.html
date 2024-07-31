@@ -8,7 +8,7 @@
         Aprecie o melhor<br />
         da <span>culinária contemporânea!</span>
       </div>
-      <app-button size="large" icon="whatsapp"></app-button>
+      <app-button [size]="buttonSize" icon="whatsapp"></app-button>
     </div>
   </div>
   <div class="reserva-area">
@@ -36,29 +36,31 @@
     </div>
     <div class="reserva-container">
       <div class="reserva-title">
-        <app-title cor="preto" title="Faça sua Reserva"></app-title>
+        <app-title cor="preto" title="Faça sua Reserva" ></app-title>
       </div>
       <div class="reserva-description">
-        Comemore seis momentos mais especiais com a gente!
+        Comemore seus momentos mais especiais com a gente!
       </div>
       <div class="reserva-btns">
         <app-button
-          size="medium"
+          size="custom"
           type="secondary-yellow"
           buttonLabel="Aniversário"
           fontFamily="montserrat"
           fontWeight="bold"
           icon="fa-solid fa-arrow-right-long"
+          whatsappMessage="Olá, vim pelo site. Quero fazer uma reserva para aniversário!"
         >
           ></app-button
         >
         <app-button
-          size="medium"
+          size="custom"
           type="secondary-yellow"
           buttonLabel="Confraternizações"
           fontFamily="montserrat"
           fontWeight="bold"
           icon="fa-solid fa-arrow-right-long"
+          whatsappMessage="Olá, vim pelo site. Quero fazer uma reserva para uma confraternização!"
         >
           ></app-button
         >

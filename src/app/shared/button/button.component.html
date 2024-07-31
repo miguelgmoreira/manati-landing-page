@@ -1,4 +1,4 @@
-<button class="button {{ type() }}" [ngClass]="size()" [ngStyle]="{fontFamily: fontFamily(), fontWeight: fontWeight()}">
+<button class="button {{ type() }}" [ngClass]="size()" [ngStyle]="{fontFamily: fontFamily(), fontWeight: fontWeight(), width: 300}" (click)="goToWhatsapp()">
         {{ buttonLabel()}}
         <ng-container *ngIf="icon()">
           <img src="../../../assets/WhatsApp.png" alt="" *ngIf="icon() == 'whatsapp'">

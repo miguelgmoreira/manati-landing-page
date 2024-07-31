@@ -1,13 +1,13 @@
 <div class="programacao-area">
     <div class="programacao-container">
         <div class="video">
-            <video autoplay muted loop [muted]="'muted'" class="background-video">
+            <video autoplay muted defaultMuted loop playsInline [muted]="'muted'" class="background-video">
                 <source src="../../../assets/musica-manati.mp4" type="video/mp4">
                 Seu browser não suporta vídeos HTML5
               </video>
         </div>
         <div class="programacao-description">
-            <div class="programacao-description-span">O MELHOR DA MUSICA BRASILEIRA</div>
+            <div class="programacao-description-span">O MELHOR DA MÚSICA BRASILEIRA</div>
             <div class="programacao-description-title">
                 <app-title title="Programação Musical" cor="amarelo"></app-title>
             </div>
@@ -31,7 +31,7 @@
                 </div>
             </div>
             <div class="button">
-                <app-button buttonLabel="ENTRAR EM CONTATO" icon="whatsapp" size="large"></app-button>
+                <app-button buttonLabel="ENTRAR EM CONTATO" icon="whatsapp" size="large" whatsappMessage="Olá, vim pelo site. Quero saber mais sobre a programação músical!"></app-button>
             </div>
         </div>
     </div>
