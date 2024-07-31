@@ -22,11 +22,23 @@ export class AboutComponent {
     },
     {
       imageSrc: '../../../assets/banheiro-manati.jpg',
-      imageAlt: 'banheiro'
+      imageAlt: 'Banheiro'
     },
     {
-      imageSrc: '../../../assets/mesas-manati.jpg',
-      imageAlt: 'mesas'
+      imageSrc: '../../../assets/banheiro-manati-2.jpg',
+      imageAlt: 'Banheiro 2'
+    },
+    {
+      imageSrc: '../../../assets/bar-area-lateral-manati.jpg',
+      imageAlt: 'Bar'
+    },
+    {
+      imageSrc: '../../../assets/brinquedoteca-manati.jpg',
+      imageAlt: 'Brinquedoteca'
+    },
+    {
+      imageSrc: '../../../assets/interior-manati.jpg',
+      imageAlt: 'Interior'
     },
   ]
 }
