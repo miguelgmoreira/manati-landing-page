@@ -20,10 +20,21 @@
     max-height: 300px;
 }
 
-.manati-label {
-    color: var(--text-brown);
-    font-size: 38px;
-    line-height: 130%;
+// .manati-label {
+//     color: var(--text-brown);
+//     font-size: 38px;
+//     line-height: 130%;
+// }
+
+.manati-logo {
+    align-items: center;
+    height: 50px;
+    width: 54px;
+}
+
+.manati-logo img {
+    width: 100%;
+    height: 100%;
 }
 
 .nav-items > .nav-item {
