@@ -34,13 +34,13 @@
 
 .image-description-label {
   font-family: montserrat;
-  font-size: 28px;
+  font-size: 1.8rem;
   color: var(--terciary-yellow);
   margin-bottom: 0.5rem;
 }
 
 .image-description {
-  font-size: 64px;
+  font-size: 4rem;
   color: var(--white);
   margin-bottom: 48px;
   line-height: normal;
@@ -67,19 +67,19 @@
 }
 
 .reserva-title {
-  font-size: 48px;
+  font-size: 3rem;
   margin-bottom: 0.5rem;
 }
 
 .reserva-description {
-  font-size: 18px;
+  font-size: 1.5rem;
   font-family: montserrat;
-  margin-bottom: 48px;
+  margin-bottom: 3rem;
 }
 
 .reserva-btns {
   display: flex;
-  gap: 48px;
+  gap: 3rem;
 }
 
 .overlap-container {
@@ -92,9 +92,9 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 38px;
+  gap: 2.2rem;
   background-color: #fff8f0;
-  padding: 24px 38px;
+  padding: 1.6rem 2.2rem;
   border-radius: 8px;
   position: absolute;
   top: -15%;
@@ -103,16 +103,16 @@
 .card-item {
   display: flex;
   align-items: center;
-  gap: 8px;
+  gap: .5rem;
 }
 
 .card-item-label {
-  font-size: 18px;
+  font-size: 1.5rem;
   color: var(--brown-bg);
 }
 
 .card-item i {
-  font-size: 38px;
+  font-size: 2.2rem;
   padding: 10px;
   border-radius: 50%;
   background-color: var(--beige-icon);
@@ -135,15 +135,15 @@
   }
 
   .overlap-card {
-    gap: 24px;
+    gap: 1.6rem;
   }
 
   .card-item i {
-    font-size: 32px;
+    font-size: 2rem;
   }
 
   .card-item-label {
-    font-size: 16px;
+    font-size: 1rem;
   }
 }
 
@@ -153,7 +153,7 @@
     }
 
     .overlap-card {
-        padding: 12px 28px;
+        padding: .8rem 1.8rem;
         display: grid;
         grid-template-columns: 1fr 1fr;
         top: -20%;
@@ -180,15 +180,14 @@
   }
 
   .image-description {
-    font-size: 32px;
+    font-size: 2rem;
+    margin-bottom: 3.5rem;
+    line-height: 1;
   }
 
   .image-description-label {
-    font-size: 16px;
-  }
-
-  .image-description {
-    margin-bottom: 38px;
+    font-size: 1rem;
+    line-height: 1;
   }
 
   .home-description {
@@ -198,14 +197,18 @@
   }
 
   .reserva-area {
-    padding: 50px 20px 80px 20px;
+    padding: 3rem 1.2rem 5rem 1.2rem;
     height: auto;
+  }
+
+  .reserva-description {
+    font-size: 1.2rem;
   }
 
   .overlap-card {
     grid-template-columns: 1fr;
     position: relative;
-    padding: 12px 18px;
+    padding: .8rem 1.2rem;
     gap: 24px;
     top: -25%;
   }
@@ -213,7 +216,7 @@
   .reserva-btns {
     flex-direction: column;
     align-items: center;
-    gap: 24px;
+    gap: 1.4rem;
   }
 
   .overlap-container {

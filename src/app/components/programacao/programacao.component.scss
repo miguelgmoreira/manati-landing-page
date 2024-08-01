@@ -33,7 +33,7 @@
 .programacao-description-text, .programacao-description-text > span {
     font-family: montserrat;
     color: var(--beige-bg);
-    font-size: 20px;
+    font-size: 1.4rem;
 }
 
 .programacao-description-text > span {
@@ -43,6 +43,7 @@
 
 .programacao-description-text {
     margin-bottom: 36px;
+    text-align: left;
 }
 
 
@@ -64,7 +65,7 @@
 }
 
 .programacao-description-tipos > div > i {
-    font-size: 20px;
+    font-size: 1.4rem;
     color: var(--section-title);
 }
 
@@ -109,12 +110,27 @@
     .programacao-description-tipos {
         margin: 0 auto;
         margin-bottom: 48px;
-        width: 80%;
+        width: 100%;
+    }
+
+    .programacao-description {
+        padding: 0 10px;
     }
 
     .button {
         display: flex;
         align-items: center;
         justify-content: center;
+    }
+
+    .programacao-description-text {
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .programacao-description-text, .programacao-description-text span {
+        font-size: 1.1rem;
     }
 }

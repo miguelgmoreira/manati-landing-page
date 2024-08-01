@@ -19,14 +19,14 @@
 .faq-pergunta {
     margin-right: 2rem;
     font-family: satoshi;
-    font-size: 24px;
+    font-size: 1.5rem;
     font-weight: 600;
 }
 
 .answer {
     font-family: satoshi;
     margin-top: 34px;
-    font-size: 18px;
+    font-size: 1.1rem;
 }
 
 .montserrat {
@@ -35,11 +35,11 @@
 
 @media (max-width: 835px) {
     .faq-pergunta {
-        font-size: 20px;
+        font-size: 1.2rem;
     }
 
     .action-btn {
         margin: 0;
-        font-size: 30px;
+        font-size: 1.9rem;
     }
 }
