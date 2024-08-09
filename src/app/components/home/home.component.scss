@@ -1,18 +1,25 @@
 .home {
   min-height: calc(100vh - 69px);
+  width: 100%;
 }
 
 .image-container {
   position: relative;
   min-height: calc(62vh - 69px);
-  background: linear-gradient(to right, #141000, rgba(12, 10, 1, 0)),
-    url("../../../assets/manati-home-img.jpg");
-  background-size: cover;
-  background-position: center 48%;
-  background-repeat: no-repeat;
+  background: linear-gradient(to right, #141000, rgba(12, 10, 1, 0));
 }
 
 .background-image {
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  
+  z-index: -1;
+}
+
+.background-video {
   height: 100%;
   position: absolute;
   top: 0;
@@ -22,8 +29,13 @@
   z-index: -1;
 }
 
+
 .background-image img {
   height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center 48%;
+  background-repeat: no-repeat;
 }
 
 .home-description {
@@ -119,15 +131,62 @@
   color: #703c0b;
 }
 
-// @media (max-height: 944px) {
-//     .image-container {
-//         height: 440px;
-//     }
+@media (max-height: 900px ) {
+  .image-description {
+    font-size: 2.5rem; 
+    line-height: 1.2; 
+    margin-bottom: 2rem; 
+  }
 
-//     .reserva-area {
-//         height: calc(100vh - 509px);
-//     }
-// }
+  .home-description {
+    bottom: 25%; 
+  }
+
+  .overlap-card {
+    top: -20%;
+  }
+
+}
+
+@media (max-height: 820px) {
+  .overlap-card {
+    top: -20%;
+    padding: 1.2rem 1.6rem;
+  }
+}
+
+@media (max-height: 720px) {
+  .overlap-card {
+    padding: .8rem 1.4rem;
+  }
+
+}
+
+@media (max-height: 600px) {
+  .image-description {
+    font-size: 2rem;
+    line-height: 1.1;
+    margin-bottom: 1.5rem;
+  }
+
+  .home-description {
+    bottom: 20%;
+  }
+}
+
+@media (max-width: 1480px) {
+  .overlap-card {
+    gap: 1.6rem;
+  }
+
+  .card-item i {
+    font-size: 2rem;
+  }
+
+  .card-item-label {
+    font-size: 1.2rem;
+  }
+}
 
 @media (max-width: 1280px) {
   .home-description {
@@ -147,7 +206,7 @@
   }
 }
 
-@media (max-width: 1118px) {
+@media (max-width: 1118px ){
     .overlap-container {
       margin-bottom: 4rem;
     }

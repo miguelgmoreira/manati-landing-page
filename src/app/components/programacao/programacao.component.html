@@ -1,38 +1,49 @@
 <div class="programacao-area">
-    <div class="programacao-container">
-        <div class="video">
-            <video autoplay muted defaultMuted loop playsInline [muted]="'muted'" class="background-video">
-                <source src="../../../assets/musica-manati.mp4" type="video/mp4">
-                Seu browser não suporta vídeos HTML5
-              </video>
-        </div>
-        <div class="programacao-description">
-            <div class="programacao-description-span">O MELHOR DA MÚSICA BRASILEIRA</div>
-            <div class="programacao-description-title">
-                <app-title title="Programação Musical" cor="amarelo"></app-title>
-            </div>
-            <div class="programacao-description-text">Apresentações musicais com vários<br> gêneros <span>de quinta a domingo</span></div>
-            <div class="programacao-description-tipos">
-                <div>
-                    <i class="fa-solid fa-certificate"></i>
-                    <div class="tipo-label">Brasilidades</div>
-                </div>
-                <div>
-                    <i class="fa-solid fa-certificate"></i>
-                    <div class="tipo-label">Pop/Rock</div>
-                </div>
-                <div>
-                    <i class="fa-solid fa-certificate"></i>
-                    <div class="tipo-label">Axé</div>
-                </div>
-                <div>
-                    <i class="fa-solid fa-certificate"></i>
-                    <div class="tipo-label">Sertanejo</div>
-                </div>
-            </div>
-            <div class="button">
-                <app-button buttonLabel="ENTRAR EM CONTATO" icon="whatsapp" [size]="buttonSize" whatsappMessage="Olá, vim pelo site. Quero saber mais sobre a programação músical!"></app-button>
-            </div>
-        </div>
+  <div class="programacao-container">
+    <div class="video">
+      <video
+        autoplay
+        muted
+        defaultMuted
+        loop
+        playsInline
+        [muted]="'muted'"
+        class="background-video"
+        #video
+      >
+        <source src="../../../assets/musica-manati.mp4" type="video/mp4" />
+        Seu browser não suporta vídeos HTML5
+      </video>
     </div>
+    <div class="programacao-description">
+      <div class="programacao-description-span">
+        O MELHOR DA MÚSICA BRASILEIRA
+      </div>
+      <div class="programacao-description-title">
+        <app-title title="Programação Musical" cor="amarelo"></app-title>
+      </div>
+      <div class="programacao-description-text">
+        Apresentações musicais com vários<br />
+        gêneros <span>de quinta a domingo</span>
+      </div>
+      <div class="programacao-description-tipos">
+        <div>
+          <i class="fa-solid fa-certificate"></i>
+          <div class="tipo-label">Brasilidades</div>
+        </div>
+        <div>
+          <i class="fa-solid fa-certificate"></i>
+          <div class="tipo-label">Pop/Rock</div>
+        </div>
+        <div>
+          <i class="fa-solid fa-certificate"></i>
+          <div class="tipo-label">Axé</div>
+        </div>
+        <div>
+          <i class="fa-solid fa-certificate"></i>
+          <div class="tipo-label">Sertanejo</div>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>

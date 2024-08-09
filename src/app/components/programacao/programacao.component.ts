@@ -1,23 +1,24 @@
-import { Component } from '@angular/core';
+import { CommonModule } from '@angular/common';
+import { Component, ElementRef, ViewChild } from '@angular/core';
 import { ButtonComponent } from '../../shared/button/button.component';
+import { WindowService } from '../../shared/services/window.service';
 import { TitleComponent } from '../../shared/title/title.component';
 
 @Component({
   selector: 'app-programacao',
   standalone: true,
-  imports: [ButtonComponent, TitleComponent],
+  imports: [ButtonComponent, TitleComponent, CommonModule],
   templateUrl: './programacao.component.html',
   styleUrl: './programacao.component.scss'
 })
 export class ProgramacaoComponent {
+  @ViewChild('video') video!: ElementRef;
 
-  buttonSize: string = ''
+  buttonSize: string = '';
+
+  constructor(private windowService: WindowService) {}
 
   ngOnInit(): void {
-    if(window.innerWidth < 768) {
-      this.buttonSize = 'medium';
-    } else {
-      this.buttonSize = 'large';
-    }
+      this.buttonSize = this.windowService.isMobileScreen() ? 'medium' : 'large';
   }
 }

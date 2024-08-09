@@ -1,14 +1,17 @@
 <div class="faq-item-container" (click)="toggleExpand()">
     <div class="showed-area">
-        <div class="faq-pergunta">{{question()?.question}} ?</div>
+        <div class="faq-pergunta" [innerHTML]="question()?.question"></div>
         <div class="action-btn">
             <i class="fa-solid fa-plus" *ngIf="!expanded"></i>
             <i class="fa-solid fa-xmark" *ngIf="expanded"></i>
         </div>
     </div>
-    <div class="hidden-area" *ngIf="expanded">
+    <ng-container *ngIf="expanded">
+        <div>
+
+        </div>
         <div class="answer" [innerHTML]="question()?.answerHtml" ngClass="montserrat">
         </div>
-    </div>
+    </ng-container>
 </div>
 <app-divider></app-divider>

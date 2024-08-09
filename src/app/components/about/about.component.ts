@@ -37,7 +37,7 @@ export class AboutComponent {
       imageAlt: 'Tilapia'
     },
     {
-      imageSrc: '../../../assets/manati-sobremesa-morango.jpg',
+      imageSrc: '../../../assets/manati-sobremesa-redvelvet.jpg',
       imageAlt: 'Sobremesa manati morango'
     },
   ]

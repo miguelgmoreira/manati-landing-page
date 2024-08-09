@@ -7,14 +7,16 @@
     class="fade"
   />
 
-  <div *ngIf="indicators" class="carousel-dot-container">
-    <span
-      *ngFor="let dot of images(); let i = index"
-      [ngClass]="{ active: selectedIndex === i }"
-      class="dot"
-      (click)="selectImage(i)"
-    ></span>
-  </div>
+  <ng-container *ngIf="indicators">
+    <div class="carousel-dot-container">
+      <span
+        *ngFor="let dot of images(); let i = index"
+        [ngClass]="{ active: selectedIndex === i }"
+        class="dot"
+        (click)="selectImage(i)"
+      ></span>
+    </div>
+  </ng-container>
 
   <button *ngIf="controls" class="btn-carousel btn-prev">
     <i class="fas fa-arrow-circle-left icon-carousel icon-prev" (click)="onPrevClick()"></i>
