@@ -31,4 +31,4 @@ jobs:
           username: ${{ secrets.FTP_USERNAME }}
           password: ${{ secrets.FTP_PASSWORD }}
           local-dir: ./dist/manati-landing-page/browser/
-          server-dir: /home/u159406724/public_html/
+          server-dir: /home/${{ secrets.FTP_SERVER__DIR_ID }}/public_html/
