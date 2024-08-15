@@ -9,8 +9,8 @@ import { TitleComponent } from '../../shared/title/title.component';
   styleUrl: './cardapio.component.scss',
 })
 export class CardapioComponent {
-  irParaCardapio() {
+  irParaCardapio(uri: string) {
     window.location.href =
-      'https://manati.accon.app/menu';
+      `https://menu.getinapp.com.br/pt-br/EP0bEG63/menus/D6W2O31Q/categories/${uri}`;
   }
 }
