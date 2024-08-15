@@ -33,4 +33,4 @@ jobs:
       - name: Deploy to Hostinger
         run: |
           sshpass -p ${{ secrets.HOSTINGER_PASSWORD }} ssh -o StrictHostKeyChecking=no ${{ secrets.HOSTINGER_USERNAME }}@${{ secrets.HOSTINGER_HOST }} \
-          "docker pull ${{ secrets.DOCKER_USERNAME }}/manati-frontend:latest && docker stop manati-frontend && docker rm manati-frontend && docker run -d --name manati-frontend -p 80:80 ${ secrets.DOCKER_USERNAME }/manati-frontend:latest"
+          "docker pull ${{ secrets.DOCKER_USERNAME }}/manati-frontend:latest && docker stop manati-frontend && docker rm manati-frontend && docker run -d --name manati-frontend -p 80:80 ${{ secrets.DOCKER_USERNAME }}/manati-frontend:latest"
