@@ -8,9 +8,10 @@ import { Component, input } from '@angular/core';
   templateUrl: './title.component.html',
   styleUrl: './title.component.scss'
 })
+
 export class TitleComponent {
-  title = input<string>();
-  cor = input<'preto' | 'amarelo'>();
+  title = input<string>('');
+  cor = input<'preto' | 'amarelo'>('preto');
   font = input<'montserrat' | 'adumu' | 'satoshi'>('adumu');
-  fontWeight = input<'normal' | 'bold' | string>()
+  fontWeight = input<'normal' | 'bold' | string>('normal')
 }
