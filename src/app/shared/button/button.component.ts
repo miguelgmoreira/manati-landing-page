@@ -23,6 +23,9 @@ export class ButtonComponent {
 
   goToWhatsapp() {
     const formatedString = this.encodeMessage(this.whatsappMessage())
-    window.location.href = `https://wa.me/556184914194?text=${formatedString}`
+    window.open(
+      `https://wa.me/556184914194?text=${formatedString}`,
+      '_blank'
+    );
   }
 }
