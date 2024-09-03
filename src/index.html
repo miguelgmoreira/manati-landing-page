@@ -15,6 +15,21 @@
 
       gtag("config", "AW-16664695333");
     </script>
+    <script>
+      function gtag_report_conversion(url) {
+        gtag('event', 'conversion', {
+          'send_to': 'AW-16664695333/XMGRCO6e088ZEKWkrIo-',
+        });
+        return false;
+      }
+    
+      document.querySelectorAll('.button').forEach(function(button) {
+        button.addEventListener('click', function(event) {
+          event.preventDefault();
+          gtag_report_conversion();
+        });
+      });
+    </script>
     <!-- Meta Pixel Code -->
     <script>
       !(function (f, b, e, v, n, t, s) {
