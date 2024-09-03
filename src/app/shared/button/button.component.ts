@@ -1,12 +1,16 @@
 import { CommonModule } from '@angular/common';
 import { Component, input } from '@angular/core';
+import { GoogleTagManagerService } from 'angular-google-tag-manager';
 
 @Component({
   selector: 'app-button',
   standalone: true,
   imports: [CommonModule],
   templateUrl: './button.component.html',
-  styleUrl: './button.component.scss'
+  styleUrl: './button.component.scss',
+  providers: [
+    {provide: 'googleTagManagerId', useValue: "AW-16664695333"}
+  ]
 })
 export class ButtonComponent {
   buttonLabel = input<string>('ENTRAR EM CONTATO');
@@ -17,8 +21,20 @@ export class ButtonComponent {
   fontWeight = input<string>('normal')
   whatsappMessage = input<string>("Olá, vim pelo site!");
 
+  constructor(private gtmService: GoogleTagManagerService) {}
+
   private encodeMessage(message: string) {
     return encodeURIComponent(message);
+  }
+
+  onButtonClick(): void {
+    const gtmTag = {
+      event: 'Entrar em contato',
+      conversion_label: 'XMGRCO6e088ZEKWkrIo-',
+      value: 1
+    }
+
+    this.gtmService.pushTag(gtmTag)
   }
 
   goToWhatsapp() {
