@@ -1,6 +1,5 @@
 import { CommonModule } from '@angular/common';
 import { Component, input } from '@angular/core';
-import { GoogleTagManagerService } from 'angular-google-tag-manager';
 
 @Component({
   selector: 'app-button',
@@ -21,25 +20,10 @@ export class ButtonComponent {
   fontWeight = input<string>('normal')
   whatsappMessage = input<string>("Olá, vim pelo site!");
 
-  constructor(private gtmService: GoogleTagManagerService) {}
+  constructor() {}
 
   private encodeMessage(message: string) {
     return encodeURIComponent(message);
-  }
-
- private pushToDataLayer(event: string, conversionLabel?: string, value?: number) {
-    (window as any).dataLayer = (window as any).dataLayer || [];
-    (window as any).dataLayer.push({
-      event: event,
-      conversion_label: conversionLabel,
-      value: value
-    });
-  }
-
-  onButtonClick(): void {
-    console.log('Button clicked');
-    // Enviar um evento de conversão
-    this.pushToDataLayer('conversion', 'XMGRCO6e088ZEKWkrIo-', 1);
   }
 
   goToWhatsapp() {
