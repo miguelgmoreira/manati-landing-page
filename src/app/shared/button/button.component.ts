@@ -27,14 +27,19 @@ export class ButtonComponent {
     return encodeURIComponent(message);
   }
 
-  onButtonClick(): void {
-    const gtmTag = {
-      event: 'Entrar em contato',
-      conversion_label: 'XMGRCO6e088ZEKWkrIo-',
-      value: 1
-    }
+ private pushToDataLayer(event: string, conversionLabel?: string, value?: number) {
+    (window as any).dataLayer = (window as any).dataLayer || [];
+    (window as any).dataLayer.push({
+      event: event,
+      conversion_label: conversionLabel,
+      value: value
+    });
+  }
 
-    this.gtmService.pushTag(gtmTag)
+  onButtonClick(): void {
+    console.log('Button clicked');
+    // Enviar um evento de conversão
+    this.pushToDataLayer('conversion', 'XMGRCO6e088ZEKWkrIo-', 1);
   }
 
   goToWhatsapp() {
