@@ -1,5 +1,5 @@
 import { CommonModule, ViewportScroller } from '@angular/common';
-import { Component } from '@angular/core';
+import { AfterViewInit, Component, ViewChild } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { AboutComponent } from './components/about/about.component';
 import { CardapioComponent } from './components/cardapio/cardapio.component';
@@ -10,6 +10,8 @@ import { FooterComponent } from './components/footer/footer.component';
 import { HomeComponent } from './components/home/home.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { ProgramacaoComponent } from './components/programacao/programacao.component';
+import { ToastService } from './shared/services/toast/toast.service';
+import { ToastComponent } from './shared/toast/toast.component';
 
 @Component({
   selector: 'app-root',
@@ -25,17 +27,25 @@ import { ProgramacaoComponent } from './components/programacao/programacao.compo
     CardapioComponent,
     DuvidasComponent,
     FaqComponent,
-    FooterComponent
+    FooterComponent,
+    ToastComponent
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss',
 })
-export class AppComponent {
-  constructor(private viewPortScroller: ViewportScroller) {}
+export class AppComponent implements AfterViewInit {
+  @ViewChild(ToastComponent) toastComponent!: ToastComponent;
+  
+  constructor(private viewPortScroller: ViewportScroller, private toastService: ToastService) {}
 
+  ngAfterViewInit() {
+    this.toastService.setToastComponent(this.toastComponent);
+  }
+  
   title = 'manati-landing-page';
 
   scrollToSection(section: string) {
     this.viewPortScroller.scrollToAnchor(section);
+    
   }
 }

@@ -1,7 +1,7 @@
 import { NO_ERRORS_SCHEMA } from '@angular/core';
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 import { BrowserModule, DomSanitizer, SafeHtml } from '@angular/platform-browser';
-import { WindowService } from '../../shared/services/window.service';
+import { WindowService } from '../../shared/services/window/window.service';
 import { FaqComponent } from './faq.component';
 
 describe('FaqComponent', () => {

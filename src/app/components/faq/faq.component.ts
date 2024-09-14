@@ -3,7 +3,7 @@ import { Component, OnInit } from '@angular/core';
 import { DomSanitizer } from '@angular/platform-browser';
 import { ButtonComponent } from '../../shared/button/button.component';
 import { DividerComponent } from '../../shared/divider/divider.component';
-import { WindowService } from '../../shared/services/window.service';
+import { WindowService } from '../../shared/services/window/window.service';
 import { TitleComponent } from '../../shared/title/title.component';
 import { FaqItemComponent } from './faq-item/faq-item.component';
 import { FaqQuestion } from './models/faqQuestion.model';

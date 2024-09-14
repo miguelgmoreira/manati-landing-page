@@ -2,7 +2,7 @@ import { CommonModule } from '@angular/common';
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 import { By } from '@angular/platform-browser';
 import { ButtonComponent } from '../../shared/button/button.component';
-import { WindowService } from '../../shared/services/window.service';
+import { WindowService } from '../../shared/services/window/window.service';
 import { TitleComponent } from '../../shared/title/title.component';
 import { ProgramacaoComponent } from './programacao.component';
 

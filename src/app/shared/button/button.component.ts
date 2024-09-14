@@ -1,5 +1,6 @@
 import { CommonModule } from '@angular/common';
 import { Component, input } from '@angular/core';
+import { ToastService } from '../services/toast/toast.service';
 
 @Component({
   selector: 'app-button',
@@ -20,7 +21,7 @@ export class ButtonComponent {
   fontWeight = input<string>('normal')
   whatsappMessage = input<string>("Olá, vim pelo site!");
 
-  constructor() {}
+  constructor(private toastService: ToastService) {}
 
   private encodeMessage(message: string) {
     return encodeURIComponent(message);
@@ -33,5 +34,6 @@ export class ButtonComponent {
     //   '_blank'
     // );
     console.log("Serviço temporariamente indisponível!");
+    this.toastService.showToast("Serviço temporariamente indisponível!");
   }
 }

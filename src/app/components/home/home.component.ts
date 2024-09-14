@@ -1,7 +1,7 @@
 import { CommonModule } from '@angular/common';
 import { AfterViewInit, Component, ElementRef, ViewChild } from '@angular/core';
 import { ButtonComponent } from '../../shared/button/button.component';
-import { WindowService } from '../../shared/services/window.service';
+import { WindowService } from '../../shared/services/window/window.service';
 import { TitleComponent } from '../../shared/title/title.component';
 
 @Component({
