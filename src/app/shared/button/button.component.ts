@@ -27,10 +27,11 @@ export class ButtonComponent {
   }
 
   goToWhatsapp() {
-    const formatedString = this.encodeMessage(this.whatsappMessage())
-    window.open(
-      `https://wa.me/556184914194?text=${formatedString}`,
-      '_blank'
-    );
+    // const formatedString = this.encodeMessage(this.whatsappMessage())
+    // window.open(
+    //   `https://wa.me/556184914194?text=${formatedString}`,
+    //   '_blank'
+    // );
+    console.log("Serviço temporariamente indisponível!");
   }
 }
