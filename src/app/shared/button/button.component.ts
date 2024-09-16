@@ -27,12 +27,15 @@ export class ButtonComponent {
     return encodeURIComponent(message);
   }
 
-  goToWhatsapp() {
-    // const formatedString = this.encodeMessage(this.whatsappMessage())
-    // window.open(
-    //   `https://wa.me/556184914194?text=${formatedString}`,
-    //   '_blank'
-    // );
+  public goToWhatsapp() {
+    const formatedString = this.encodeMessage(this.whatsappMessage())
+    window.open(
+      `https://wa.me/556184914194?text=${formatedString}`,
+      '_blank'
+    );
+  }
+
+  public serviceUnavailable(): void {
     console.log("Serviço temporariamente indisponível!");
     this.toastService.showToast("Serviço temporariamente indisponível!");
   }
