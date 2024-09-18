@@ -41,7 +41,7 @@ export class FaqComponent implements OnInit {
     {
       question: 'Como funciona o cardápio ?',
       answer:
-        'Nosso cardápio à la carte é variado. Confira mais detalhes aqui: <a href="https://manati.accon.app/menu" target="_blank">Clique aqui</a>. Durante o almoço, oferecemos um buffet todos os dias das 11:30 às 15:30, com opções a R$ 119,90/kg ou R$ 99,00 à vontade.',
+        'Temos uma enorme variedade, nosso cardápio tem opções de peixes, frutos do mar, carnes, saladas e diversos acompanhamentos, veja mais no <a href="https://www.deliway.com.br/restaurante-manati-delivery-brasilia-df" target="_blank">nosso cardápio digital</a>. O valor é de R$ 109,90 o KG de segunda a sexta-feira e R$ 119,90 aos finais de semana. </br></br> Oferecemos também a opção de se servir à vontade em nosso buffet livre. Por R$99,00 de seg a sexta  e 109,90 aos finais de semana e feriados.',
     },
     {
       question: 'Onde fica o Manatí ?',
@@ -56,7 +56,7 @@ export class FaqComponent implements OnInit {
     {
       question: 'Como funciona o happy hour ?',
       answer:
-        'Temos happy hour das 15:00 às 20:00 de terça a domingo. Consulte nosso cardápio para promoções específicas de happy hour: <a href="https://manati.accon.app/?s=w" target="_blank">Clique aqui</a>.',
+        'Temos happy hour das 15:00 às 20:00 de terça a domingo. Consulte nosso cardápio para promoções específicas de happy hour: <a href="https://www.deliway.com.br/restaurante-manati-delivery-brasilia-df" target="_blank">Clique aqui</a>.',
     },
   ];
   isMobileScreen: boolean = false;
