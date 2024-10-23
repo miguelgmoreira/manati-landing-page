@@ -1,0 +1,42 @@
+.localizacao-area {
+    background-color: var(--beige-bg);
+    padding: 0 0 5rem 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.iframe-container {
+    position: relative;
+    width: 60%;
+    padding-bottom: 30%;
+    height: 0;
+}
+
+.iframe-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+@media (max-width: 1400px) {
+    .iframe-container {
+        padding-bottom: 40%;
+        width: 80%;
+    }
+  }
+  
+  @media (max-width: 835px) {
+    .localizacao-area {
+        padding: 0 0 2.5rem 0;
+    }
+
+    .iframe-container {
+        width: 95%;
+        padding-bottom: 60%;
+    }
+
+}

@@ -8,6 +8,7 @@ import { EspacoComponent } from './components/espaco/espaco.component';
 import { FaqComponent } from './components/faq/faq.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { HomeComponent } from './components/home/home.component';
+import { LocalizacaoComponent } from './components/localizacao/localizacao.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { ProgramacaoComponent } from './components/programacao/programacao.component';
 import { ToastService } from './shared/services/toast/toast.service';
@@ -28,7 +29,8 @@ import { ToastComponent } from './shared/toast/toast.component';
     DuvidasComponent,
     FaqComponent,
     FooterComponent,
-    ToastComponent
+    ToastComponent,
+    LocalizacaoComponent
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss',
