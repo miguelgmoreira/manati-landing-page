@@ -7,13 +7,21 @@
 }
 
 .manati-logo {
-    margin-bottom: 3rem;
+    margin-bottom: 2rem;
 }
 
-.copyright {
+.copyright, .address, .opening-hours {
     color: var(--white);
     font-family: montserrat;
     font-size: 14px;
+}
+
+.address {
+    margin-bottom: 3rem;
+}
+
+.opening-hours {
+    margin-bottom: .5rem;
 }
 
 .flex {
