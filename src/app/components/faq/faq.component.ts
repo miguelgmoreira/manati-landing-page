@@ -24,7 +24,12 @@ import { FaqQuestion } from './models/faqQuestion.model';
 export class FaqComponent implements OnInit {
   faqQuestions: FaqQuestion[] = [
     {
-      question: 'Gostaria de saber se vocês oferecem algo para aniversariantes ?',
+      question: 'Como funciona o cardápio ?',
+      answer:
+        'Temos uma enorme variedade, nosso cardápio tem opções de peixes, frutos do mar, carnes, saladas e diversos acompanhamentos, veja mais no <a href="https://www.deliway.com.br/restaurante-manati-delivery-brasilia-df" target="_blank">nosso cardápio digital</a>. O valor é de R$ 119,00 o KG de segunda a sexta-feira e R$ 129,00 aos finais de semana. </br></br> Oferecemos também a opção de se servir à vontade em nosso buffet livre. Por R$99,00 de seg a sexta  e 109,90 aos finais de semana e feriados.',
+    },
+    {
+      question: 'Vocês oferecem algo para aniversariantes ?',
       answer:
         'Aniversariantes recebem uma sobremesa de cortesia e, ao trazer 10 convidados também ganham um drink.',
     },
@@ -37,11 +42,6 @@ export class FaqComponent implements OnInit {
       question: 'Como faço uma reserva para aniversariantes ou outra data ?',
       answer:
         'Enviamos um link para que você possa fazer sua reserva facilmente: <a href="https://widget.getinapp.com.br/D6dNW7PM" target="_blank">Clique aqui</a>. Se preferir, podemos ajudar através do nosso WhatsApp.',
-    },
-    {
-      question: 'Como funciona o cardápio ?',
-      answer:
-        'Temos uma enorme variedade, nosso cardápio tem opções de peixes, frutos do mar, carnes, saladas e diversos acompanhamentos, veja mais no <a href="https://www.deliway.com.br/restaurante-manati-delivery-brasilia-df" target="_blank">nosso cardápio digital</a>. O valor é de R$ 109,90 o KG de segunda a sexta-feira e R$ 119,90 aos finais de semana. </br></br> Oferecemos também a opção de se servir à vontade em nosso buffet livre. Por R$99,00 de seg a sexta  e 109,90 aos finais de semana e feriados.',
     },
     {
       question: 'Onde fica o Manatí ?',
