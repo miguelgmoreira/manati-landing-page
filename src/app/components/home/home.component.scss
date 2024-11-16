@@ -6,6 +6,9 @@
 .image-container {
   position: relative;
   min-height: calc(62vh - 69px);
+}
+
+.background-blur {
   background: linear-gradient(to right, #141000, rgba(12, 10, 1, 0));
 }
 
@@ -15,7 +18,6 @@
   top: 0;
   left: 0;
   width: 100%;
-  
   z-index: -1;
 }
 

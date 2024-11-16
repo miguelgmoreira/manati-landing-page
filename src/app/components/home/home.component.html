@@ -1,5 +1,5 @@
 <div class="home">
-  <div class="image-container">
+  <div class="image-container" [ngClass]="{'background-blur': !isMobileScreen}">
     <ng-container *ngIf="!isMobileScreen">
       <div class="background-image">
         <img src="../../../assets/manati-home-img.jpg" alt="" />
@@ -17,17 +17,17 @@
           #video
         >
           <source
-            src="../../../assets/manati-dia-dos-pais-video.mp4"
+            src="../../../assets/home-video-mobile.mp4"
             type="video/mp4"/>
           Seu browser não suporta vídeos HTML5
         </video>
       <ng-container *ngIf="autoplayFailed">
         <div class="background-image">
-          <img src="../../../assets/manati-dia-dos-pais-estatico.jpg" alt="" />
+          <img src="../../../assets/home-image-mobile.png" alt="" />
         </div>
       </ng-container>
     </ng-container>
-    <div class="home-description">
+    <div class="home-description" *ngIf="!isMobileScreen">
       <div class="image-description-label">
         {{ "Uma nova experiência" | uppercase }}
       </div>
@@ -35,11 +35,6 @@
         Aprecie o melhor<br />
         da <span>culinária contemporânea!</span>
       </div>
-      <app-button
-        [size]="buttonSize"
-        icon="whatsapp"
-        buttonLabel="FAÇA SUA RESERVA"
-      ></app-button>
     </div>
   </div>
   <div class="reserva-area">
