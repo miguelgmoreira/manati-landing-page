@@ -31,12 +31,7 @@ export class FaqComponent implements OnInit {
     {
       question: 'Vocês oferecem algo para aniversariantes ?',
       answer:
-        'Aniversariantes recebem uma sobremesa de cortesia e, ao trazer 10 convidados também ganham um drink.',
-    },
-    {
-      question: 'Como funciona a decoração para aniversariantes ?',
-      answer:
-        'Preparamos um arranjo de balões para decorar a sua mesa. Se desejar, você pode trazer decorações adicionais. Servimos o bolo e os docinhos, caso queira trazer.',
+        'O aniversariante no restaurante tem vários benefícios: ganha decoração de mesa com balões, um Grand Gateau (sobremesa famosa do Manati, no sabor de sua preferência)😋. E para grupos com mais de 10 convidados, também ganha 1 drink (alcoólico ou não).',
     },
     {
       question: 'Como faço uma reserva para aniversariantes ou outra data ?',
@@ -51,7 +46,7 @@ export class FaqComponent implements OnInit {
     {
       question: 'Como funciona a agenda musical ?',
       answer:
-        'Oferecemos música ao vivo de quinta a domingo durante o almoço às 12:30 e durante o jantar às 19:30. Confira a agenda semanal em nosso Instagram: <a href="https://www.instagram.com/manatirestaurante" target="_blank">@manatirestaurante</a>.',
+        'Oferecemos música ao vivo de quarta a domingo, em um ambiente aconchegante e descontraído, com área ao ar livre e varanda🎼. Confira a agenda semanal em nosso Instagram: <a href="https://www.instagram.com/manatirestaurante" target="_blank">@manatirestaurante</a>.',
     },
     {
       question: 'Como funciona o happy hour ?',
