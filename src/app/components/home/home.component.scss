@@ -93,7 +93,7 @@
 
 .reserva-btns {
   display: flex;
-  gap: 3rem;
+  justify-content: center;
 }
 
 .overlap-container {
@@ -272,12 +272,6 @@
     padding: .8rem 1.2rem;
     gap: 24px;
     top: -25%;
-  }
-
-  .reserva-btns {
-    flex-direction: column;
-    align-items: center;
-    gap: 1.4rem;
   }
 
   .overlap-container {

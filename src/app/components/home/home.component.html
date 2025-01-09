@@ -1,26 +1,27 @@
 <div class="home">
-  <div class="image-container" [ngClass]="{'background-blur': !isMobileScreen}">
+  <div
+    class="image-container"
+    [ngClass]="{ 'background-blur': !isMobileScreen }"
+  >
     <ng-container *ngIf="!isMobileScreen">
       <div class="background-image">
         <img src="../../../assets/manati-home-img.jpg" alt="" />
       </div>
     </ng-container>
     <ng-container *ngIf="isMobileScreen">
-        <video
-          autoplay
-          muted
-          defaultMuted
-          loop
-          playsInline
-          [muted]="'muted'"
-          class="background-video"
-          #video
-        >
-          <source
-            src="../../../assets/home-video-mobile.mp4"
-            type="video/mp4"/>
-          Seu browser não suporta vídeos HTML5
-        </video>
+      <video
+        autoplay
+        muted
+        defaultMuted
+        loop
+        playsInline
+        [muted]="'muted'"
+        class="background-video"
+        #video
+      >
+        <source src="../../../assets/home-video-mobile.mp4" type="video/mp4" />
+        Seu browser não suporta vídeos HTML5
+      </video>
       <ng-container *ngIf="autoplayFailed">
         <div class="background-image">
           <img src="../../../assets/home-image-mobile.png" alt="" />
@@ -71,22 +72,11 @@
         <app-button
           size="custom"
           type="secondary-yellow"
-          buttonLabel="Aniversário"
+          buttonLabel="Reservas"
           fontFamily="montserrat"
           fontWeight="bold"
           icon="fa-solid fa-arrow-right-long"
-          whatsappMessage="Olá, vim pelo site. Quero fazer uma reserva para aniversário!"
-        >
-          ></app-button
-        >
-        <app-button
-          size="custom"
-          type="secondary-yellow"
-          buttonLabel="Confraternizações"
-          fontFamily="montserrat"
-          fontWeight="bold"
-          icon="fa-solid fa-arrow-right-long"
-          whatsappMessage="Olá, vim pelo site. Quero fazer uma reserva para uma confraternização!"
+          whatsappMessage="Olá, vim pelo site. Gostaria de fazer uma reserva!"
         >
           ></app-button
         >
