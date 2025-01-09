@@ -53,8 +53,7 @@ export class AppComponent implements AfterViewInit {
 
   goToWhatsapp() {
     window.open(
-      `https://wa.me/556184914194?text=Olá,%20vim%20pelo%20site!`,
-      '_blank'
+      `https://wa.me/556184914194?text=Olá,%20vim%20pelo%20site!`
     );
   }
 }
