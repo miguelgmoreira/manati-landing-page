@@ -12,7 +12,13 @@
   transform: scale(1.1);
 }
 
-.whatsapp-logo img {
+.whatsapp-logo a {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+}
+
+.whatsapp-logo img{
   width: 100%;
   height: 100%;
   cursor: pointer;
