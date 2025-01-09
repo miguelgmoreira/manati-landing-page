@@ -46,7 +46,7 @@ export class FaqComponent implements OnInit {
     {
       question: 'Como funciona a agenda musical ?',
       answer:
-        'Oferecemos música ao vivo de quarta a domingo, em um ambiente aconchegante e descontraído, com área ao ar livre e varanda🎼. Confira a agenda semanal em nosso Instagram: <a href="https://www.instagram.com/manatirestaurante" target="_blank">@manatirestaurante</a>.',
+        'Venha curtir música ao vivo de quinta a domingo no Manati Restaurante! </br> Oferecemos apresentações durante o almoço, às 12:30, e durante o jantar, às 19:30. </br></br>Confira nossa agenda semanal em nosso Instagram: <a href="https://www.instagram.com/manatirestaurante" target="_blank">@manatirestaurante</a>. </br></br>Horários das atrações: </br></br>Quinta-feira: 12:30 e 19:30</br>Sexta-feira: 12:30 e 19:30</br>Sábado: 12:30, 15:30 e 19:30</br>Domingo: 12:30 e 15:30',
     },
     {
       question: 'Como funciona o happy hour ?',
