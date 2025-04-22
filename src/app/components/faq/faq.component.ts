@@ -26,7 +26,7 @@ export class FaqComponent implements OnInit {
     {
       question: 'Como funciona o cardápio ?',
       answer:
-        'Temos uma enorme variedade, nosso cardápio tem opções de peixes, frutos do mar, carnes, saladas e diversos acompanhamentos, veja mais no <a href="https://www.deliway.com.br/restaurante-manati-delivery-brasilia-df" target="_blank">nosso cardápio digital</a>. O valor é de R$ 119,00 o KG de segunda a sexta-feira e R$ 129,00 aos finais de semana. </br></br> Oferecemos também a opção de se servir à vontade em nosso buffet livre. Por R$99,00 de seg a sexta  e 109,90 aos finais de semana e feriados.',
+        'Temos uma enorme variedade, nosso cardápio tem opções de peixes, frutos do mar, carnes, saladas e diversos acompanhamentos, veja mais no <a href="https://www.deliway.com.br/restaurante-manati-delivery-brasilia-df" target="_blank">nosso cardápio digital</a>. O valor é de R$ 124,00 o KG de segunda a sexta-feira e R$ 134,00 aos finais de semana e feriados. </br></br> Oferecemos também a opção de se servir à vontade em nosso buffet livre. Por R$89,90 de seg a sexta e 109,90 aos finais de semana e feriados.',
     },
     {
       question: 'Vocês oferecem algo para aniversariantes ?',
