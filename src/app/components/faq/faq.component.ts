@@ -31,7 +31,7 @@ export class FaqComponent implements OnInit {
     {
       question: 'Vocês oferecem algo para aniversariantes ?',
       answer:
-        'O aniversariante no restaurante tem vários benefícios: ganha decoração de mesa com balões, um Grand Gateau (sobremesa famosa do Manati, no sabor de sua preferência)😋. E para grupos com mais de 10 convidados, também ganha 1 drink (alcoólico ou não).',
+        'O aniversariante no restaurante tem vários benefícios: ganha decoração de mesa com balões, um Grand Gateau (sobremesa famosa do Manati, no sabor de sua preferência)😋. </br></br> E para grupos com mais de 10 convidados, também ganha 1 drink (alcoólico ou não).',
     },
     {
       question: 'Como faço uma reserva para aniversariantes ou outra data ?',
