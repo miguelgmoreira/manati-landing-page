@@ -1,17 +1,15 @@
 <div class="faq-item-container" (click)="toggleExpand()">
-    <div class="showed-area">
-        <div class="faq-pergunta" [innerHTML]="question()?.question"></div>
-        <div class="action-btn">
-            <i class="fa-solid fa-plus" *ngIf="!expanded"></i>
-            <i class="fa-solid fa-xmark" *ngIf="expanded"></i>
-        </div>
+  <div class="showed-area">
+    <div class="faq-pergunta" [innerHTML]="question()?.question"></div>
+    <div class="action-btn">
+      <i class="fa-solid fa-plus" *ngIf="!expanded"></i>
+      <i class="fa-solid fa-xmark" *ngIf="expanded"></i>
     </div>
-    <ng-container *ngIf="expanded">
-        <div>
+  </div>
 
-        </div>
-        <div class="answer" [innerHTML]="question()?.answerHtml" ngClass="montserrat">
-        </div>
-    </ng-container>
+  <!-- Sempre presente, mas com classe "hidden" quando !expanded -->
+  <div [class.hidden]="!expanded">
+    <div class="answer" [innerHTML]="question()?.answerHtml" ngClass="montserrat"></div>
+  </div>
 </div>
 <app-divider></app-divider>

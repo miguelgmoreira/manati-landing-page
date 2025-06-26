@@ -33,6 +33,10 @@
     font-family: montserrat !important;
 }
 
+.hidden {
+  display: none;
+}
+
 @media (max-width: 835px) {
     .faq-pergunta {
         font-size: 1.2rem;
