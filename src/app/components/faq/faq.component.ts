@@ -30,10 +30,10 @@ export class FaqComponent implements OnInit {
     🍽 Almoço com buffet self-service<br><br>
     Segunda a sexta: das 11h30 às 15h<br>
     &emsp;▫ À vontade: R$ 89,90<br>
-    &emsp;▫ Por quilo: R$ 124,00/kg<br>
+    &emsp;▫ Por quilo: R$ 129,00/kg<br>
     Sábados, domingos e feriados: das 11h30 às 16h<br>
     &emsp;▫ À vontade: R$ 109,90<br>
-    &emsp;▫ Por quilo: R$ 134,00/kg<br>
+    &emsp;▫ Por quilo: R$ 139,00/kg<br>
     Inclui variedade de frutos do mar, carnes, massas, saladas e acompanhamentos.<br><br>
     🌙 Jantar à la carte<br><br>
     Pratos individuais e para compartilhar<br>
