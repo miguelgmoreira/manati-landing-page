@@ -18,7 +18,7 @@ export class CardapioComponent {
 
   goToMenu() {
     window.open(
-      'https://www.deliway.com.br/restaurante-manati-delivery-brasilia-df',
+      'https://www.cardapioeazy.com.br/menu/manati',
       '_blank'
     );
   }
