@@ -29,11 +29,11 @@ export class FaqComponent implements OnInit {
     No Manati, oferecemos um cardápio variado que agrada a todos os paladares — dos apaixonados por frutos do mar até quem prefere carnes, petiscos ou uma sobremesa caprichada. Veja como funciona:<br><br>
     🍽 Almoço com buffet self-service<br><br>
     Segunda a sexta: das 11h30 às 15h<br>
-    &emsp;▫ À vontade: R$ 89,90<br>
-    &emsp;▫ Por quilo: R$ 129,00/kg<br>
+    &emsp;▫ À vontade: R$ 99,90<br>
+    &emsp;▫ Por quilo: R$ 134,90/kg<br>
     Sábados, domingos e feriados: das 11h30 às 16h<br>
-    &emsp;▫ À vontade: R$ 109,90<br>
-    &emsp;▫ Por quilo: R$ 139,00/kg<br>
+    &emsp;▫ À vontade: R$ 119,90<br>
+    &emsp;▫ Por quilo: R$ 139,90/kg<br>
     Inclui variedade de frutos do mar, carnes, massas, saladas e acompanhamentos.<br><br>
     🌙 Jantar à la carte<br><br>
     Pratos individuais e para compartilhar<br>
